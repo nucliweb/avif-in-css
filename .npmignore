@@ -3,3 +3,4 @@ coverage
 test
 package-lock.json
 .editorconfig
+.eslintignore
