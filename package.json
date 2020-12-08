@@ -1,0 +1,62 @@
+{
+  "name": "avif-in-css",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to use AVIF image format in CSS background",
+  "main": "index.js",
+  "scripts": {
+    "lint": "sui-lint js",
+    "test": "npm run lint && npm run test:coverage",
+    "test:coverage": "jest-ci --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucliweb/avif-in-css.git"
+  },
+  "keywords": [
+    "avif",
+    "background",
+    "css",
+    "image",
+    "polyfill",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "author": {
+    "name": "Joan León",
+    "email": "joan.leon@gmail.com",
+    "twitter": "@nucliweb",
+    "web": "https://joanleon.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nucliweb/avif-in-css/issues"
+  },
+  "homepage": "https://github.com/nucliweb/avif-in-css#readme",
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "eslintIgnore": [
+    "polyfill.js"
+  ],
+  "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
+  },
+  "devDependencies": {
+    "@s-ui/lint": "3",
+    "jest": "^26.6.3",
+    "jest-ci": "^0.1.1",
+    "jest-cli": "^26.6.3",
+    "nanodelay": "^1.0.6",
+    "postcss": "^8.1.14"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
