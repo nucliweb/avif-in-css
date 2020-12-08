@@ -1,6 +1,6 @@
 # AVIF in CSS
 
-<img src="./assets/av1.svg" align="right"
+<img src="https://github.com/nucliweb/avif-in-css/blob/main/assets/AV1.svg?raw=true" align="right"
      alt="AVIF logo" width="180" height="100">
 
 [PostCSS] plugin and tiny JS script *(315B gzipped)* to use [AVIF] image format in CSS background.
