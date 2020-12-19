@@ -40,7 +40,7 @@ body.no-avif .logo {
 ## Usage
 ### 1. Convert to AVIF
 
-Convert you images to AVIF format, you can use [Squoosh], [Avif.app], [Convertio.co], [avif.io] or any other tool. **Important**: this don't convert the images to AVIF format.
+Convert you images to AVIF format, you can use [Squoosh], [Avif.app], [Convertio.co], [avif.io] or any other tool. **Important**: This PostCSS plugin doesn't convert the images to AVIF format.
 
 ### 2. Install `avif-in-css`
 
@@ -114,12 +114,12 @@ module.exports = {
   ]
 }
 ```
-| Option | Description | Default Value |
-| ------ | ----------- | ------------- |
-| `modules` |  boolean: wrap classes to `:global()` to support CSS Modules. | `false` |
-| `avifClass` |  string: class name for browser with AVIF support. | `avif` |
-| `noAvifClass` |  string: class name for browser without AVIF support. | `no-avif` |
-| `rename` |  function: get a new file name from old name, like `(oldName: string) => string`, then `url(./image.png)` → `url(./image.png.avif)`. | |
+| Option | Description | Default Value | Type Value |
+| ------ | ----------- | ------------- | ---------- |
+| `modules` |  Wrap classes to `:global()` to support CSS Modules. | `false` | Boolean |
+| `avifClass` |  Class name for browser with AVIF support. | `avif` | String |
+| `noAvifClass` |  Class name for browser without AVIF support. | `no-avif` | String |
+| `rename` |  Get a new file name from old name, like `(oldName: string) => string`, then `url(./image.png)` → `url(./image.png.avif)`. | | Function |
 
 ## Supported browsers
 

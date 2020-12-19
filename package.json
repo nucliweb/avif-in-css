@@ -1,6 +1,6 @@
 {
   "name": "avif-in-css",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "PostCSS plugin to use AVIF image format in CSS background",
   "main": "index.js",
   "scripts": {
