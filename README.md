@@ -9,6 +9,7 @@ With this PostCSS Plugin you can use **AVIF** image format in your CSS backgroun
 
 > AVIF offers significant compression gains vs. JPEG and WebP, with a recent Netflix study showing 50% savings vs. standard JPEG and > 60% savings on 4:4:4 content
 
+Take a look to the demo site [avif-in-css.netlify.app]
 ## How works?
 
 You add `require('avif-in-css')` to your JS bundle and write CSS like:
@@ -113,12 +114,12 @@ module.exports = {
   ]
 }
 ```
-
-* `modules` boolean: wrap classes to `:global()` to support CSS Modules.
-  `false` by default.
-* `avifClass` string: class name for browser with AVIF support.
-* `noAvifClass` string: class name for browser without AVIF support.
-* `rename` function: get a new file name from old name, like `(oldName: string) => string`, then `url(./image.png)` → `url(./image.png.avif)`.
+| Option | Description | Default Value |
+| ------ | ----------- | ------------- |
+| `modules` |  boolean: wrap classes to `:global()` to support CSS Modules. | `false` |
+| `avifClass` |  string: class name for browser with AVIF support. | `avif` |
+| `noAvifClass` |  string: class name for browser without AVIF support. | `no-avif` |
+| `rename` |  function: get a new file name from old name, like `(oldName: string) => string`, then `url(./image.png)` → `url(./image.png.avif)`. | |
 
 ## Supported browsers
 
@@ -134,3 +135,4 @@ module.exports = {
 [Convertio.co]: https://convertio.co/avif-converter/
 [avif.io]: https://avif.io/
 [postcss-loader]: https://github.com/postcss/postcss-loader#usage
+[avif-in-css.netlify.app]: https://avif-in-css.netlify.app
