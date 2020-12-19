@@ -44,14 +44,18 @@ Convert you images to AVIF format, you can use [Squoosh], [Avif.app], [Convertio
 ### 2. Install `avif-in-css`
 
 ```sh
-npm install --save-dev webp-in-css
+npm install --save-dev avif-in-css
 ```
 #### 2.1 Load the polyfill
 
 Add the JS script to your client-side JS bundle:
 
 ```diff js
-+ require('avif-in-css')
+// CommonJS
++ require('avif-in-css/polyfill.js')
+
+// ES6
++ import 'avif-in-css/polyfill.js'
 ```
 
 Since JS script is very small (315B gzipped), the best way for landings
@@ -65,7 +69,7 @@ is to inline it to HTML:
 You can load the script via CDN:
 
 ```diff html
-+   <script src=""></script>
++   <script src="https://unpkg.com/avif-in-css/polyfill.js"></script>
   </head>
 ```
 

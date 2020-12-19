@@ -4,3 +4,4 @@ test
 package-lock.json
 .editorconfig
 .eslintignore
+.vscode
