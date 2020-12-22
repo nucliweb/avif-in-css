@@ -3,13 +3,16 @@
 <img src="https://github.com/nucliweb/avif-in-css/blob/main/assets/AV1.svg?raw=true" align="right"
      alt="AVIF logo" width="180" height="100">
 
-[PostCSS] plugin and tiny JS script *(315B gzipped)* to use [AVIF] image format in CSS background.
+[PostCSS] plugin and a tiny JS script *(315B gzipped)* to use the [AVIF] image format for CSS background images.
 
-With this PostCSS Plugin you can use **AVIF** image format in your CSS background in [Supported Browsers](#supported-browsers), and fallback with the original image.
+Use **AVIF** in [Supported Browsers](#supported-browsers) and fall back to the original image in other browsers.
+
+Take a look at the demo site [avif-in-css.netlify.app]
+
+## About AVIF
 
 > AVIF offers significant compression gains vs. JPEG and WebP, with a recent Netflix study showing 50% savings vs. standard JPEG and > 60% savings on 4:4:4 content
 
-Take a look to the demo site [avif-in-css.netlify.app]
 ## How works?
 
 You add `require('avif-in-css')` to your JS bundle and write CSS like:
