@@ -39,7 +39,7 @@
     "jest-ci": "^0.1.1",
     "jest-cli": "^26.6.3",
     "nanodelay": "^1.0.6",
-    "postcss": "^8.1.14"
+    "postcss": "8.1.14"
   },
   "peerDependencies": {
     "postcss": "8.1.14"
